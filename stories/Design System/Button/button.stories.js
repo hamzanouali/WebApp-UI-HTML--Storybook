@@ -5,6 +5,10 @@ export default {
   argTypes: {
     text: { control: 'text' },
     type: { control: 'text' },
+    iconPosition: {
+      control: 'select',
+      options: ['left', 'right']
+    },
     icon: { control: 'text' },
     onClick: { action: 'onClick' },
   },

@@ -1,6 +1,6 @@
-import './assets/Font-Poppins/font.css'
-import './assets/normalization.css'
-import './assets/root.css'
+import '../../assets/Font-Poppins/font.css'
+import '../../assets/normalization.css'
+import '../../assets/root.css'
 import './button.css'
 
 export const createButton = ({
