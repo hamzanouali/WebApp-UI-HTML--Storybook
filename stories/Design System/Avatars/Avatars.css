@@ -41,6 +41,8 @@
   width: 100%;
   height: 100%;
   border-radius: var(--ui-avatar-radius);
+  min-height: calc(var(--ui-avatar--width-and-height) + 1px);
+  min-width: calc(var(--ui-avatar--width-and-height) + 1px);
 }
 
 .ui-avatar--offline {
@@ -78,13 +80,13 @@
 .ui-avatar--medium.ui-avatar--offline::before {
   right: 3px;
   bottom: 2px;
-  transform: scale(1);
+  transform: scale(1.05);
 }
 
 .ui-avatar--large.ui-avatar--offline::before {
   right: 10px;
   bottom: 4px;
-  transform: scale(1);
+  transform: scale(1.05);
 }
 
 .ui-avatar--online {
@@ -122,13 +124,13 @@
 .ui-avatar--medium.ui-avatar--online::before {
   right: 3px;
   bottom: 2px;
-  transform: scale(1);
+  transform: scale(1.05);
 }
 
 .ui-avatar--large.ui-avatar--online::before {
   right: 10px;
   bottom: 4px;
-  transform: scale(1);
+  transform: scale(1.05);
 }
 
 .ui-avatar--edit {
@@ -152,7 +154,7 @@
 }
 
 .ui-avatar__camera {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -164,6 +166,10 @@
   border-radius: 10rem;
   background-color: var(--ui-neutral-300);
   cursor: pointer;
+}
+
+.ui-avatar--edit .ui-avatar__camera {
+  display: flex;
 }
 
 .ui-avatar--very-small .ui-avatar__camera {
@@ -181,22 +187,27 @@
 .ui-avatar--medium .ui-avatar__camera {
   right: -2px;
   bottom: -2px;
-  transform: scale(1);
+  transform: scale(1.05);
 }
 
 .ui-avatar--large .ui-avatar__camera {
   right: 6px;
   bottom: 0;
-  transform: scale(1);
+  transform: scale(1.05);
 }
 
 .ui-avatar__file-input {
+  display: none;
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
   cursor: pointer;
+}
+
+.ui-avatar--edit .ui-avatar__file-input {
+  display: block;
 }
 
 /* AVATAR-INFO */

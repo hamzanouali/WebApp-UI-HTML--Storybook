@@ -12,8 +12,7 @@ export default {
     secondaryText: { control: 'text' },
     status: {
       control: 'select',
-      options: ['online', 'offline', 'none'],
-      default: 'none'
+      options: ['none', 'online', 'offline', 'edit'],
     }
   },
 };
@@ -26,5 +25,7 @@ const Template = ({ label, ...args }) => {
 
 export const Avatar = Template.bind({});
 Avatar.args = {
-  imgURL: 'https://randomuser.me/api/portraits/men/43.jpg'
+  size: 'medium',
+  imgURL: 'https://randomuser.me/api/portraits/men/43.jpg',
+  status: 'none',
 };
