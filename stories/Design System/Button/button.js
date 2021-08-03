@@ -7,6 +7,7 @@ export const createButton = ({
     type = 'primary',
     outline = false,
     icon = false,
+    showIcon = false,
     iconPosition = 'left',
     text,
     onClick,
@@ -16,9 +17,9 @@ export const createButton = ({
     const btnType = `ui-btn--${type}`
     const outlined = outline ?  `ui-btn--${type}-outline` : ``
 
-    if(!icon) {
+    if(!icon || !showIcon) {
         div.innerHTML = `<button class="ui-btn ${btnType} ${outlined}">${text}</button>`
-    } else if(icon && iconPosition === 'left') {
+    } else if(showIcon && icon && iconPosition === 'left') {
         div.innerHTML = `
         <button class="ui-btn ${btnType} ${outlined} ui-btn--icon">
             <span class="ui-btn__icon-container">
@@ -28,7 +29,7 @@ export const createButton = ({
                 ${text}
             </span>
         </button>`
-    } else {
+    } else if(showIcon && icon && iconPosition === 'right') {
         div.innerHTML = `
         <button class="ui-btn ${btnType} ${outlined} ui-btn--icon">
             <span class="ui-btn__text">
