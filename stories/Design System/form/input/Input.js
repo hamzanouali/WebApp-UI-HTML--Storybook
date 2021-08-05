@@ -4,6 +4,9 @@ import '../../../assets/root.css'
 import '../form.css'
 import './input.css'
 
+// WARNING! WARNING! Don't import this and don't use it, it's used for Storybook only
+import '../dont.use.this.css'
+
 export const createInput = ({
   label,
   labelSize,

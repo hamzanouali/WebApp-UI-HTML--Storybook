@@ -66,6 +66,4 @@
 body {
   font-family: var(--ui-font-family);
   color: var(--ui-neutral-600);
-  /* @todo: remove this */
-  background: #f3f5f7;
 }

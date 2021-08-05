@@ -1,0 +1,20 @@
+/*
+WARNING!
+WARNING!
+WARNING!
+WARNING!
+
+this file is used for Storybook only, please don't copy or use this in your work
+*/
+
+.ui-form-item:not(.ui-form-item--switch):not(.ui-form-item--checkbox) {
+  width: 300px;
+}
+
+.ui-form-item.ui-form-item--people-tags {
+  width: 600px;
+}
+
+.ui-form-item--select {
+  width: 300px;
+}
