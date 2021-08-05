@@ -1,7 +1,7 @@
 import { createButton } from './button';
 
 export default {
-  title: 'Design-System/Button',
+  title: 'Design System/Button',
   argTypes: {
     text: { control: 'text' },
     type: { 

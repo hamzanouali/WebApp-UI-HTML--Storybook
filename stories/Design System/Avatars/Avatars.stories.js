@@ -1,7 +1,7 @@
 import { createAvatar } from './Avatars';
 
 export default {
-  title: 'Design-System/Avatars',
+  title: 'Design System/Avatars',
   argTypes: {
     size: {
       control: 'select',
