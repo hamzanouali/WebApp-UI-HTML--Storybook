@@ -18,7 +18,7 @@ export const createInput = ({
 }) => {
 
   const inputStatus = status !== 'none' ? `ui-form-item-container--${status}` : ''
-  const inputStatusMessage = statusMessage ? `<span class="ui-form-item-container__message">${statusMessage}</span>`: ''
+  const inputStatusMessage = statusMessage && status !== 'none'  ? `<span class="ui-form-item-container__message">${statusMessage}</span>`: ''
   const inputLabel = label ? `<label class="ui-form-item__label" for="input-unique-id-1">${label}</label>` : ''
   const inputLabelSize = labelSize ? `ui-form-item--${labelSize}-label` : ''
 

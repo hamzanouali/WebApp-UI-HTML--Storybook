@@ -18,10 +18,8 @@
 /* 1. Error */
 
 .ui-form-item-container--error .ui-form-item__label,
-.ui-form-item-container--error .ui-form-item--small-label .ui-form-item__label,
-.ui-form-item-container--error:focus-within .ui-form-item__label,
-.ui-form-item-container--error:focus-within .ui-form-item--small-label .ui-form-item__label {
-  color: var(--ui-danger-200);
+.ui-form-item-container--error:focus-within .ui-form-item__label {
+  color: var(--ui-danger-200) !important;
 }
 
 .ui-form-item-container--error .ui-form-item__input,
@@ -41,10 +39,8 @@
 /* 2. Warning */
 
 .ui-form-item-container--warning .ui-form-item__label,
-.ui-form-item-container--warning .ui-form-item--small-label .ui-form-item__label,
-.ui-form-item-container--warning:focus-within .ui-form-item__label,
-.ui-form-item-container--warning:focus-within .ui-form-item--small-label .ui-form-item__label {
-  color: var(--ui-warning-200);
+.ui-form-item-container--warning:focus-within .ui-form-item__label {
+  color: var(--ui-warning-200) !important;
 }
 
 .ui-form-item-container--warning .ui-form-item__input,
@@ -64,10 +60,8 @@
 /* 3. Success */
 
 .ui-form-item-container--success .ui-form-item__label,
-.ui-form-item-container--success .ui-form-item--small-label .ui-form-item__label,
-.ui-form-item-container--success:focus-within .ui-form-item__label,
-.ui-form-item-container--success:focus-within .ui-form-item--small-label .ui-form-item__label {
-  color: var(--ui-success-100);
+.ui-form-item-container--success:focus-within .ui-form-item__label {
+  color: var(--ui-success-100) !important;
 }
 
 .ui-form-item-container--success .ui-form-item__input,
