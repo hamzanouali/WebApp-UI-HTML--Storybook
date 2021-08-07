@@ -12,7 +12,7 @@ this file is used for Storybook only, please don't copy or use this in your work
 }
 
 .ui-form-item.ui-form-item--people-tags {
-  width: 600px;
+  width: 600px !important;
 }
 
 .ui-form-item--select {
