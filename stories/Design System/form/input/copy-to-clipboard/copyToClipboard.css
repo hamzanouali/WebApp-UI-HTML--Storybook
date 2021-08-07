@@ -1,0 +1,42 @@
+.ui-form-item--copy-to-clipboard {
+  --ui-form-item__copy-btn--width-and-height: 29px;
+  --ui-form-item__copy-btn--inset: 7.4px;
+}
+
+.ui-form-item--copy-to-clipboard .ui-form-item__input-icon-group .ui-form-item__input {
+  --ui-form-item--copy-to-clipboard--input--padding-left: calc(var(--ui-form-item__copy-btn--width-and-height) + var(--ui-form-item__copy-btn--inset));
+
+  padding: 11px 17px;
+  padding-right: calc(var(--ui-form-item--copy-to-clipboard--input--padding-left) + 4px);
+  cursor: pointer;
+}
+
+.ui-form-item--copy-to-clipboard:focus .ui-form-item__input,
+.ui-form-item--copy-to-clipboard:focus-within .ui-form-item__input {
+  border-color: var(--ui-primary-200);
+}
+
+.ui-form-item__copy-btn {
+  position: absolute;
+  inset: var(--ui-form-item__copy-btn--inset);
+  left: auto;
+  width: var(--ui-form-item__copy-btn--width-and-height);
+  height: var(--ui-form-item__copy-btn--width-and-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ui-neutral-300);
+  color: var(--ui-neutral-400);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.ui-form-item--copy-to-clipboard:focus-within .ui-form-item__copy-btn,
+.ui-form-item__copy-btn:focus,
+.ui-form-item__copy-btn:hover {
+  color: var(--ui-primary-200__invert);
+  background: var(--ui-primary-200);
+}
