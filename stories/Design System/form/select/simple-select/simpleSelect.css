@@ -1,0 +1,84 @@
+.ui-form-item__select {
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px var(--ui-neutral-300);
+  background-color: var(--ui-white);
+  color: inherit;
+  padding: 11px 25px 11px 15px; /* 15px instead of 17px because browsers are adding some white space in the side */
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  outline: none;
+  box-shadow: var(--ui-shadow-100);
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.ui-form-item__select:focus {
+  border-color: var(--ui-primary-200);
+}
+
+.ui-form-item--select .ui-form-item__dropdown-icon {
+  position: absolute;
+  height: auto;
+  width: auto;
+  inset: 1px;
+  left: auto;
+  color: var(--ui-neutral-400);
+  background: var(--ui-white);
+  padding: 11px 17px 11px 0;
+  border-radius: 5px;
+  color: inherit;
+  pointer-events: none;
+  line-height: 1.7;
+  transition: .2s all;
+}
+
+.ui-form-item--select:focus-within .ui-form-item__dropdown-icon {
+  color: var(--ui-primary-200);
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------- */
+/* ---------------------------- */
+/* select with icon */
+
+.ui-form-item__select-icon-group {
+  width: 100%;
+  display: flex;
+  position: relative;
+  --ui-form-item__select-icon--width: 47px;
+}
+
+.ui-form-item__select-icon-group--show-icon select {
+  padding-left: calc(var(--ui-form-item__select-icon--width) - 5px); /* -5px because browsers are adding some white space in the sides */
+}
+
+.ui-form-item__icon {
+  display: none;
+  position: absolute;
+  inset: 1px;
+  right: auto;
+  color: var(--ui-neutral-400);
+  align-items: center;
+  justify-content: center;
+  width: var(--ui-form-item__select-icon--width);
+  height: 100%;
+  transition: .2s all;
+}
+
+.ui-form-item__select-icon-group--show-icon .ui-form-item__icon {
+  display: flex;
+}
+
+.ui-form-item__icon * {
+  width: 19px;
+  height: 19px;
+}
+
+.ui-form-item:focus-within .ui-form-item__icon {
+  color: var(--ui-primary-200);
+}

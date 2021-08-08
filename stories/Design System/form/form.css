@@ -23,12 +23,16 @@
 }
 
 .ui-form-item-container--error .ui-form-item__input,
-.ui-form-item-container--error:focus-within .ui-form-item__input {
+.ui-form-item-container--error:focus-within .ui-form-item__input,
+.ui-form-item-container--error .ui-form-item__select,
+.ui-form-item-container--error:focus-within .ui-form-item__select {
   border-color: var(--ui-danger-200);
 }
 
 .ui-form-item-container--error .ui-form-item__icon,
-.ui-form-item-container--error:focus-within .ui-form-item__icon {
+.ui-form-item-container--error:focus-within .ui-form-item__icon,
+.ui-form-item-container--error .ui-form-item__dropdown-icon,
+.ui-form-item-container--error:focus-within .ui-form-item__dropdown-icon {
   color: var(--ui-danger-200) !important;
 }
 
@@ -44,12 +48,16 @@
 }
 
 .ui-form-item-container--warning .ui-form-item__input,
-.ui-form-item-container--warning:focus-within .ui-form-item__input {
+.ui-form-item-container--warning:focus-within .ui-form-item__input,
+.ui-form-item-container--warning .ui-form-item__select,
+.ui-form-item-container--warning:focus-within .ui-form-item__select {
   border-color: var(--ui-warning-200);
 }
 
 .ui-form-item-container--warning .ui-form-item__icon,
-.ui-form-item-container--warning:focus-within .ui-form-item__icon {
+.ui-form-item-container--warning:focus-within .ui-form-item__icon,
+.ui-form-item-container--warning .ui-form-item__dropdown-icon,
+.ui-form-item-container--warning:focus-within .ui-form-item__dropdown-icon {
   color: var(--ui-warning-200) !important;
 }
 
@@ -65,12 +73,16 @@
 }
 
 .ui-form-item-container--success .ui-form-item__input,
-.ui-form-item-container--success:focus-within .ui-form-item__input {
+.ui-form-item-container--success:focus-within .ui-form-item__input,
+.ui-form-item-container--success .ui-form-item__select,
+.ui-form-item-container--success:focus-within .ui-form-item__select {
   border-color: var(--ui-success-100);
 }
 
 .ui-form-item-container--success .ui-form-item__icon,
-.ui-form-item-container--success:focus-within .ui-form-item__icon {
+.ui-form-item-container--success:focus-within .ui-form-item__icon,
+.ui-form-item-container--success .ui-form-item__dropdown-icon,
+.ui-form-item-container--success:focus-within .ui-form-item__dropdown-icon {
   color: var(--ui-success-100) !important;
 }
 

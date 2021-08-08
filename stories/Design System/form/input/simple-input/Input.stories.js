@@ -30,8 +30,8 @@ simpleInput.argTypes = {
 }
 simpleInput.args = {
   label: 'Email',
-  labelSize: 'normal',
-  placeholder: 'e.g: hamza@gmail.com',
+  labelSize: 'small',
+  placeholder: 'hamza@frontendor.com',
   status: 'none',
   statusMessage: '',
   showIcon: false,
