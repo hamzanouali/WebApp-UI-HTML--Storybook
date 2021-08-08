@@ -58,19 +58,23 @@
 }
 
 .ui-form-item__icon {
-  display: none;
   position: absolute;
   inset: 1px;
   right: auto;
   color: var(--ui-neutral-400);
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--ui-form-item__select-icon--width);
   height: 100%;
   transition: .2s all;
 }
 
-.ui-form-item__select-icon-group--show-icon .ui-form-item__icon {
+.ui-form-item--select .ui-form-item__icon {
+  display: none;
+  width: var(--ui-form-item__select-icon--width);
+}
+
+.ui-form-item--select .ui-form-item__select-icon-group--show-icon .ui-form-item__icon {
   display: flex;
 }
 
