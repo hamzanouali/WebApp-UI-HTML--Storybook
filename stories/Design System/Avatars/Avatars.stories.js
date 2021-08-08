@@ -1,7 +1,7 @@
 import { createAvatar } from './Avatars';
 
 export default {
-  title: 'Design System/Avatars',
+  title: 'Design System/Avatar',
   argTypes: {
     size: {
       control: 'select',
@@ -23,8 +23,8 @@ const Template = ({ label, ...args }) => {
   return createAvatar({ label, ...args });
 };
 
-export const AvatarWithInfo = Template.bind({});
-AvatarWithInfo.args = {
+export const Avatar = Template.bind({});
+Avatar.args = {
   size: 'medium',
   imgURL: 'https://randomuser.me/api/portraits/men/43.jpg',
   status: 'none',

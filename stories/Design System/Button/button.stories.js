@@ -25,8 +25,8 @@ const Template = ({ label, ...args }) => {
   return createButton({ label, ...args });
 };
 
-export const ButtonWithIcon = Template.bind({});
-ButtonWithIcon.args = {
+export const Button = Template.bind({});
+Button.args = {
   text: 'Add Account',
   type: 'primary',
   outline: false,
