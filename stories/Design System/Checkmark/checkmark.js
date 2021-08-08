@@ -3,7 +3,7 @@ import '../../assets/normalization.css'
 import '../../assets/root.css'
 import './checkmark.css'
 
-export const createTag = ({
+export const createCheckmark = ({
   size,
   filled
 }) => {
