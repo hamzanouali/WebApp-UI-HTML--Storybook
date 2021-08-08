@@ -1,7 +1,7 @@
 import { createTypography } from './Typography';
 
 export default {
-  title: 'Design System/Typography',
+  title: '2. Design System/Typography',
   argTypes: {},
 };
 

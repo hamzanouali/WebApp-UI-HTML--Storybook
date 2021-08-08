@@ -1,7 +1,7 @@
 import { createInput } from './copyToClipboard';
 
 export default {
-  title: 'Design System/Form/Inputs',
+  title: '2. Design System/Form/Inputs',
   argTypes: {
     label: { control: 'text' },
     labelSize: {

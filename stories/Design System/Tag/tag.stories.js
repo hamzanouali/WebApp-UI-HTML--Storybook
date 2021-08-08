@@ -1,7 +1,7 @@
 import { createTag } from './tag';
 
 export default {
-  title: 'Design System/Tag',
+  title: '2. Design System/Tag',
   argTypes: {
     text: { control: 'text' },
     outlined: { control: 'boolean' }

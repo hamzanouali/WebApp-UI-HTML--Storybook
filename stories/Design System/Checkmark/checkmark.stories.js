@@ -1,7 +1,7 @@
 import { createCheckmark } from './checkmark';
 
 export default {
-  title: 'Design System/Checkmark',
+  title: '2. Design System/Checkmark',
   argTypes: {
     size: {
       control: 'radio',

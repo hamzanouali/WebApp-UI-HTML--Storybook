@@ -1,7 +1,7 @@
 import { createSwitch } from './OnOffSwitch';
 
 export default {
-  title: 'Design System/Form/Switch',
+  title: '2. Design System/Form/Switch',
   argTypes: {}
 };
 

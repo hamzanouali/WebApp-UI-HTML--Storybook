@@ -1,7 +1,7 @@
 import { createCheckbox } from './checkbox';
 
 export default {
-  title: 'Design System/Form/Checkbox And Radio',
+  title: '2. Design System/Form/Checkbox And Radio',
   argTypes: {
     label: { control: 'text' }
   },

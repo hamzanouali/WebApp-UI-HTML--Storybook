@@ -1,7 +1,7 @@
 import { createSelect } from './simpleSelect';
 
 export default {
-  title: 'Design System/Form/Select',
+  title: '2. Design System/Form/Select',
   argTypes: {
     label: { control: 'text' },
     labelSize: {
