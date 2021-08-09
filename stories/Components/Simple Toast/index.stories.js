@@ -1,28 +1,26 @@
-import { createActionToast } from './index';
+import { createSimpleToast } from './index';
 
 export default {
-  title: '1. Components/Action Toast',
+  title: '1. Components/Simple Toast',
   argTypes: {
     position: {
       control: 'radio',
       options: ['top-right', 'bottom-right', 'bottom-left', 'top-left']
     },
-    headline: { control: 'text' },
-    text: { control: 'text' }
-  },
+    text: { control: 'text' },
+    buttonText: { control: 'text' }
+  }
 };
 
 const Template = ({ label, ...args }) => {
   // You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
-  return createActionToast({ label, ...args });
+  return createSimpleToast({ label, ...args });
 };
 
-export const actionToast = Template.bind({});
-actionToast.args = {
+export const simpleToast = Template.bind({});
+simpleToast.args = {
   position: 'top-right',
-  headline: 'Backup migration',
   text: 'Configuration saved successfully!',
-  primaryText: 'Got it',
-  secondaryText: 'Close'
+  buttonText: 'Undo'
 };

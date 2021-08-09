@@ -29,6 +29,12 @@ export const createActionToast = ({
       text,
       primaryText,
       secondaryText
+    }, (event, actionToast, primaryAction) => {
+      if(!primaryAction) {
+        uiCloseActionToast(actionToast)
+      } else {
+        alert('Clicked on confirm')
+      }
     })
   })
 

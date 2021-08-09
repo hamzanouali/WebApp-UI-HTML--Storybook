@@ -1,12 +1,8 @@
-import { createNotification } from './index';
+import { createActionToast } from './index';
 
 export default {
-  title: '1. Components/Notification',
+  title: '1. Components/Action Toast',
   argTypes: {
-    type: {
-      control: 'radio',
-      options: ['success', 'danger', 'warning']
-    },
     position: {
       control: 'radio',
       options: ['top-right', 'bottom-right', 'bottom-left', 'top-left']
@@ -19,13 +15,14 @@ export default {
 const Template = ({ label, ...args }) => {
   // You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
-  return createNotification({ label, ...args });
+  return createActionToast({ label, ...args });
 };
 
-export const notification = Template.bind({});
-notification.args = {
-  type: 'success',
+export const actionToast = Template.bind({});
+actionToast.args = {
   position: 'top-right',
   headline: 'Backup migration',
-  text: 'Configuration saved successfully!'
+  text: 'Configuration saved successfully!',
+  primaryText: 'Got it',
+  secondaryText: 'Close'
 };

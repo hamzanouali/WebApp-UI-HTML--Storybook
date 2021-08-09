@@ -65,8 +65,9 @@
   right: var(--ui-action-toast__margin);
 }
 
-.ui-action-toast--top-right {
+.ui-action-toast--top-left {
   bottom: auto;
+  right: auto;
   top: var(--ui-action-toast__margin);
 }
 
