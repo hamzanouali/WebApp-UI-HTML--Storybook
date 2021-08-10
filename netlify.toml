@@ -25,9 +25,9 @@
 # A basic redirect rule
 [[redirects]]
   from = "/images/:images"
-  to = "/images"
+  to = "/images/:images"
 
 # A basic redirect rule
 [[redirects]]
   from = "/assets/:assets"
-  to = "/assets"
+  to = "/assets/:assets"
