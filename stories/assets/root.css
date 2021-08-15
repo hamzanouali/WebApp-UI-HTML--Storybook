@@ -66,4 +66,7 @@
 body {
   font-family: var(--ui-font-family);
   color: var(--ui-neutral-600);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.54;
 }

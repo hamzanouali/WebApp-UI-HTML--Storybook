@@ -27,7 +27,6 @@ export const createSimpleToast = ({
       buttonText
     }, (event, simpleToast) => {
       uiCloseSimpleToast(simpleToast)
-      alert('Reverted!')
     })
   })
 
