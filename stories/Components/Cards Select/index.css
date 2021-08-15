@@ -33,19 +33,31 @@
 
 .ui-cards-select__options-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   --ui-cards-select__options-container--margin-end: 24px;
-  width: calc(100% + var(--ui-cards-select__options-container--margin-end));
-  margin-right: calc(-1 * var(--ui-cards-select__options-container--margin-end));
+}
+
+@media(min-width: 834px) {
+  .ui-cards-select__options-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: calc(100% + var(--ui-cards-select__options-container--margin-end));
+    margin-right: calc(-1 * var(--ui-cards-select__options-container--margin-end));
+  }
 }
 
 .ui-cards-select__option {
   flex: 0 0 auto;
-  width: calc(calc(100% / 3) - var(--ui-cards-select__options-container--margin-end));
-  margin-right: var(--ui-cards-select__options-container--margin-end);
   margin-top: var(--ui-cards-select__options-container--margin-end);
   display: flex;
   position: relative;
+}
+
+@media(min-width: 834px) {
+  .ui-cards-select__option {
+    width: calc(calc(100% / 3) - var(--ui-cards-select__options-container--margin-end));
+    margin-right: var(--ui-cards-select__options-container--margin-end);
+  }
 }
 
 .ui-cards-select__option:nth-child(3n+0) {
