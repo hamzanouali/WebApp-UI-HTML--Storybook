@@ -5,7 +5,7 @@ export default {
   argTypes: {},
   decorators: [(story) => {
     const html = `
-    <div style="background: #f3f5f7; padding: 1px;">
+    <div style="background: #f3f5f7; padding: 15px;">
       <div style="max-width: 854px; margin: 100px auto;">${story().outerHTML}</div>
     </div>
     `

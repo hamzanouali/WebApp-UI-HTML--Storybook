@@ -2,3 +2,7 @@ html, body {
   height: 100%;
   background: #f9f9f9;
 }
+
+body {
+  padding: 0 !important;
+}

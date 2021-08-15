@@ -33,19 +33,31 @@
 
 .ui-config-cards__items-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   --ui-config-cards__items-container--margin-end: 24px;
-  width: calc(100% + var(--ui-config-cards__items-container--margin-end));
-  margin-right: calc(-1 * var(--ui-config-cards__items-container--margin-end));
+}
+
+@media(min-width: 834px) {
+  .ui-config-cards__items-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: calc(100% + var(--ui-config-cards__items-container--margin-end));
+    margin-right: calc(-1 * var(--ui-config-cards__items-container--margin-end));
+  }
 }
 
 .ui-config-cards__item {
   flex: 0 0 auto;
-  width: calc(calc(100% / 3) - var(--ui-config-cards__items-container--margin-end));
-  margin-right: var(--ui-config-cards__items-container--margin-end);
   margin-top: var(--ui-config-cards__items-container--margin-end);
   display: flex;
   position: relative;
+}
+
+@media(min-width: 834px) {
+  .ui-config-cards__item {
+    width: calc(calc(100% / 3) - var(--ui-config-cards__items-container--margin-end));
+    margin-right: var(--ui-config-cards__items-container--margin-end);
+  }
 }
 
 .ui-config-cards__item:nth-child(3n+0) {
