@@ -2,15 +2,25 @@
   display: flex;
   background: var(--ui-white);
   max-width: 400px;
-  width: 100%;
   position: fixed;
-  --ui-notification__margin: 30px;
-  right: var(--ui-notification__margin);
-  top: var(--ui-notification__margin);
+  width: auto;
+  --ui-notification__margin: 15px;
+  inset: var(--ui-notification__margin);
+  bottom: auto;
   border-radius: 5px;
   box-shadow: var(--ui-shadow-300);
   overflow: hidden;
   animation: uiShowNotificationAnimation .7s;
+}
+
+@media(min-width: 600px) {
+  .ui-notification {
+    width: 100%;
+    --ui-notification__margin: 30px;
+    right: var(--ui-notification__margin);
+    top: var(--ui-notification__margin);
+    left: auto;
+  }
 }
 
 @keyframes uiShowNotificationAnimation {
@@ -44,22 +54,27 @@
   }
 }
 
-.ui-notification--bottom-right {
-  top: auto;
-  right: var(--ui-notification__margin);
-  bottom: var(--ui-notification__margin);
-}
-
-.ui-notification--top-left {
-  right: auto;
-  left: var(--ui-notification__margin);
-  top: var(--ui-notification__margin);
-}
-
-.ui-notification--bottom-left {
-  top: auto;
-  left: var(--ui-notification__margin);
-  bottom: var(--ui-notification__margin);
+@media(min-width: 600px) {
+  .ui-notification--bottom-right {
+    top: auto;
+    left: auto;
+    right: var(--ui-notification__margin);
+    bottom: var(--ui-notification__margin);
+  }
+  
+  .ui-notification--top-left {
+    right: auto;
+    bottom: auto;
+    left: var(--ui-notification__margin);
+    top: var(--ui-notification__margin);
+  }
+  
+  .ui-notification--bottom-left {
+    top: auto;
+    right: auto;
+    left: var(--ui-notification__margin);
+    bottom: var(--ui-notification__margin);
+  }
 }
 
 .ui-notification__icon {
