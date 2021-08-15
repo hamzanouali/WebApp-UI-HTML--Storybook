@@ -1,17 +1,28 @@
 .ui-action-toast {
   position: fixed;
-  --ui-action-toast__margin: 30px;
-  bottom: var(--ui-action-toast__margin);
-  left: var(--ui-action-toast__margin);
+  --ui-action-toast__margin: 15px;
+  inset: var(--ui-action-toast__margin);
+  bottom: auto;
+  width: auto;
   background: var(--ui-white);
   box-shadow: var(--ui-shadow-300);
   border-radius: 5px;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
-  width: 100%;
   animation: uiShowActionToastAnimation .7s;
+}
+
+@media(min-width: 600px) {
+  .ui-action-toast {
+    --ui-action-toast__margin: 30px;
+    min-width: 400px;
+    bottom: var(--ui-action-toast__margin);
+    left: var(--ui-action-toast__margin);
+    right: auto;
+    top: auto;
+  }
 }
 
 @keyframes uiShowActionToastAnimation {
@@ -45,38 +56,32 @@
   }
 }
 
-@media(min-width: 420px) {
-  .ui-action-toast {
-    min-width: 400px;
-    width: auto;
+@media(min-width: 600px) {
+  .ui-action-toast--bottom-right {
+    top: auto;
+    left: auto;
+    right: var(--ui-action-toast__margin);
   }
-}
 
-.ui-action-toast--bottom-right {
-  top: auto;
-  left: auto;
-  right: var(--ui-action-toast__margin);
-}
+  .ui-action-toast--top-right {
+    bottom: auto;
+    top: var(--ui-action-toast__margin);
+    left: auto;
+    right: var(--ui-action-toast__margin);
+  }
 
-.ui-action-toast--top-right {
-  bottom: auto;
-  top: var(--ui-action-toast__margin);
-  left: auto;
-  right: var(--ui-action-toast__margin);
-}
-
-.ui-action-toast--top-left {
-  bottom: auto;
-  right: auto;
-  top: var(--ui-action-toast__margin);
+  .ui-action-toast--top-left {
+    bottom: auto;
+    right: auto;
+    top: var(--ui-action-toast__margin);
+  }
 }
 
 .ui-action-toast__content-flex {
   display: flex;
   flex-direction: column;
   padding: 23px 24px;
-  max-width: 350px;
-  margin-right: 120px;
+  flex-grow: 1;
 }
 
 .ui-action-toast__headline {
@@ -102,10 +107,6 @@
 .ui-action-toast__actions-flex {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
   border-left: 1px solid var(--ui-neutral-300);
 }
 
@@ -130,7 +131,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(50% - 1px); /* 1px: for the border bottom */
+  flex-grow: 1;
   border-bottom: 1px solid var(--ui-neutral-300);
 }
 
@@ -160,7 +161,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(50%);
+  flex-grow: 1;
 }
 
 .ui-action-toast__cancel-btn:hover,
