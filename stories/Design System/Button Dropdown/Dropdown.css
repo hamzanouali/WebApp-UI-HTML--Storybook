@@ -1,6 +1,5 @@
 .ui-dropdown {
   position: absolute;
-  min-width: 300px;
   width: 100%;
   left: 0;
   list-style: none;
@@ -38,24 +37,4 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-}
-
-
-/* Tippy dropdown */
-.ui-dropdown-container .tippy-box {
-  background: none !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.ui-dropdown-container .tippy-content {
-  padding: 0 !important;
-  width: auto !important;
-}
-
-.ui-dropdown-container .tippy-box .ui-dropdown {
-  position: static !important;
-  width: auto !important;
-  margin: 6px 0 !important;
 }
