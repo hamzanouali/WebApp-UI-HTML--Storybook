@@ -1,0 +1,20 @@
+.ui-title {
+  color: var(--ui-neutral-600);
+  padding-top: 1.06rem;
+  font-size: 1.3rem;
+  line-height: 1.48;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .ui-title {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ui-flex-order {
+    order: -1;
+  }
+}

@@ -1,0 +1,9 @@
+.ui-container {
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .ui-container {
+    padding: 0 2.5rem;
+  }
+}
