@@ -1,5 +1,13 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 /* Document
    ========================================================================== */
 
