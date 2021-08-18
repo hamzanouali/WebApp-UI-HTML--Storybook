@@ -1,0 +1,25 @@
+.ui-search {
+  display: flex;
+  padding: 1.38rem 0;
+}
+
+.ui-search__icon {
+  margin-right: 0.69rem;
+  order: -1;
+}
+
+.ui-search__input {
+  font: inherit;
+  color: var(--ui-primary-200);
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.ui-search__input::placeholder {
+  color: var(--ui-neutral-400);
+}
+
+.ui-search__input:focus ~ svg {
+  fill: var(--ui-primary-200);
+}

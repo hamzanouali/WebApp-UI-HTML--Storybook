@@ -12,5 +12,14 @@ const Template = ({ label, ...args }) => {
 
 export const simpleNavHeader = Template.bind({});
 simpleNavHeader.args = {
-  title: 'Welcome, Ali 👋'
+  title: 'Welcome, Ali 👋',
+  navItems: [
+    { label: 'analytics', link: '#analytics' },
+    { label: 'plans', link: '#plans' },
+    { label: 'user overview', link: '#user-overview' },
+    { label: 'invoices', link: '#invoices' },
+    { label: 'payment details', link: '#payment-details' },
+    { label: 'billing address', link: '#billing-address' },
+  ],
+  showMenu: false
 };

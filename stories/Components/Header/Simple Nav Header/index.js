@@ -4,7 +4,7 @@ import { createHeaderWrapper } from '../components/Wrapper'
 import { createHeaderTitle } from '../components/Title'
 import { createHeaderNavbar } from '../components/Navbar'
 
-export const createSimpleNavHeader = ({ title }) => {
+export const createSimpleNavHeader = ({ title, navItems, showMenu }) => {
   const headerTitle = createHeaderTitle({ title, flexOrder: true });
   const headerButton = createButton({
     type: 'primary',
@@ -12,14 +12,8 @@ export const createSimpleNavHeader = ({ title }) => {
     text: 'Upgrade Plan'
   })
   const headerNavbar = createHeaderNavbar({
-    navItems: [
-      { label: 'analytics', link: '#analytics' },
-      { label: 'plans', link: '#plans' },
-      { label: 'user overview', link: '#user-overview' },
-      { label: 'invoices', link: '#invoices' },
-      { label: 'payment details', link: '#payment-details' },
-      { label: 'billing address', link: '#billing-address' },
-    ]
+    showMenu,
+    navItems
   })
 
   const html = `

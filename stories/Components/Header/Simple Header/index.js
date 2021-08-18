@@ -5,26 +5,6 @@ import { createHeaderContainer } from '../components/Container'
 import { createHeaderWrapper } from '../components/Wrapper'
 import { createHeaderTitle } from '../components/Title'
 
-/* function SimpleHeader({ title }) {
-  return (
-    <Wrapper>
-      <Container>
-        <header className="ui-simple-header">
-          <Button color="primary-empty" usage="ui-simple-header__btn">
-            Upgrade Plan
-            <Arrow className="ui-circled-arrow" />
-          </Button>
-          <Title>{title}</Title>
-          <p className="ui-simple-header__subheading">
-            You have to keep up the pace to accomplish your goals in time.
-          </p>
-        </header>
-      </Container>
-      <Alert alertText="Your user count is at the upper limit. You should upgrade soon." />
-    </Wrapper>
-  );
-} */
-
 export const createSimpleHeader = ({ title }) => {
   const headerTitle = createHeaderTitle({ title });
   const headerButton = createButton({

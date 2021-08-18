@@ -35,7 +35,7 @@
   }
 }
 
-.ui-top-nav__button svg {
+.ui-top-nav__button__icon {
   /* width: calc(100% - 1.1875rem); */
   fill: currentColor;
   width: 1.19rem;
