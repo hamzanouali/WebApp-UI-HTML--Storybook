@@ -1,5 +1,7 @@
 import './index.css'
 
+import { createHeaderContainer } from '../Container'
+
 export const createHeaderSearchBar = () => {
   const html = `
   <div class="ui-search">

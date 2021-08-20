@@ -1,0 +1,29 @@
+.ui-long-nav {
+  padding-top: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .ui-long-nav__header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.ui-long-nav__btn {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .ui-long-nav__btn {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    width: auto;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .ui-long-nav__btn {
+    margin: 0;
+  }
+}
